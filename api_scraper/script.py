@@ -32,6 +32,9 @@ def output_job_to_xls(data):
 
     wb.save("Remote_jobs.xls")
 
+def send_email(email_from):
+    pass
+
 if __name__ == "__main__":
     json = get_job_postings()[1:]
     output_job_to_xls(json)
