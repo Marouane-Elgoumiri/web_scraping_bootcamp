@@ -165,12 +165,17 @@ def extract_links_and_info(url, output_csv):
                 writer.writerow(company_info)
 
 if __name__ == "__main__":
-    output_csv = 'companies_info.csv'
+    output_folder = 'results'
+    os.makedirs(output_folder, exist_ok=True)
+    output_csv = os.path.join(output_folder, 'companies_info.csv')
     with open(output_csv, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Title', 'Phone', 'Fax','Website','Address', 'Activity', 'Manager'])  
+
+    urls_folder = './urls'
+    urls_file = os.path.join(urls_folder, 'scraping_urls.csv')
     
-    with open('scraping_urls.csv', newline='') as csvfile:
+    with open(urls_file, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
         for row in reader:
             url = row[0]
