@@ -1,7 +1,6 @@
 import random
 import time
 import bs4
-import requests
 from requests import Session
 from twocaptcha import TwoCaptcha
 from datetime import datetime
@@ -15,7 +14,7 @@ from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
 import os
 from dotenv import load_dotenv
-
+import time
 
 load_dotenv()
 api_key = os.getenv('API_KEY')
@@ -165,6 +164,7 @@ def extract_links_and_info(url, output_csv):
                 writer.writerow(company_info)
 
 if __name__ == "__main__":
+    start_time = time.time()
     output_folder = 'results'
     os.makedirs(output_folder, exist_ok=True)
     output_csv = os.path.join(output_folder, 'companies_info.csv')
@@ -180,3 +180,11 @@ if __name__ == "__main__":
         for row in reader:
             url = row[0]
             extract_links_and_info(url, output_csv)
+            
+    with open(output_csv, 'r', newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        row_count = sum(1 for row in reader) - 1
+    end_time = time.time()  
+    duration = end_time - start_time  
+    print(f"Scraped {row_count} companies in {duration:.2f} seconds")
+    
