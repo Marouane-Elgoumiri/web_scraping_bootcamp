@@ -112,7 +112,8 @@ def extract_companies_info(url):
     title = soup.find('h1', class_='card-title card-title-md mt-2')
     title = title.get_text(strip=True) if title else 'N/A'
     
-    activity_section = soup.find('h5', style="font-family:'Lato', sans-serif;font-weight: bold;color:#000000;font-size:15px")
+    activity_block = soup.find('div', class_='card-body pb-0')
+    activity_section = activity_block.find_next('h5', style="font-family:'Lato', sans-serif;font-weight: bold;color:#000000;font-size:15px") if activity_block else None
     activity = activity_section.find_next('p').get_text(strip=True) if activity_section else 'N/A'
     
     manager = soup.find('p', class_='par-list')
