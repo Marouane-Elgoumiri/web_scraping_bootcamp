@@ -1,4 +1,4 @@
 Remote_jobs.xls
 /Kerix_scraper/.env
-/Kerix_scraper/result
-/Kerix_scraper/urls
+/Kerix_scraper/result/companies_info.csv
+/Kerix_scraper/urls/scraping_urls.csv
