@@ -105,6 +105,15 @@ def extract_companies_info(url):
     # Extracting the required information
     phone = soup.find('p', class_='label-tel')
     phone = phone.get_text(strip=True) if phone else 'N/A'
+
+    fax_button = soup.find('button', class_='faxCli')
+    fax_section = fax_button.find_next('div', class_='collapse') if fax_button else None
+    fax_tag = fax_section.find('p', class_='label-tel') if fax_section else None
+    fax = fax_tag.get_text(strip=True) if fax_tag else 'N/A'
+
+
+    website = soup.find('a', class_='btn btn-down website')
+    website = website.get('href') if website else 'N/A'
     
     address = soup.find('p', class_='card-text')
     address = address.get_text(strip=True) if address else 'N/A'
@@ -119,7 +128,7 @@ def extract_companies_info(url):
     manager = soup.find('p', class_='par-list')
     manager = manager.get_text(strip=True) if manager else 'N/A'
     
-    return [title, phone, address, activity, manager]
+    return [title, phone, fax, website, address, activity, manager]
 
 def extract_links_and_info(url, output_csv):
     page_number = 1
@@ -159,7 +168,7 @@ if __name__ == "__main__":
     output_csv = 'companies_info.csv'
     with open(output_csv, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['Title', 'Phone', 'Address', 'Activity', 'Manager'])  
+        writer.writerow(['Title', 'Phone', 'Fax','Website','Address', 'Activity', 'Manager'])  
     
     with open('scraping_urls.csv', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')

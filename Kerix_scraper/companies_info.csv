@@ -1,45 +1,221 @@
-Title,Phone,Address,Activity,Manager
-GRADERCO,0522499890,"104, rue Abderrahmane Sahraoui 20000 Casablanca - Morocco",Trade in cereals and derivatives,"Youssef Benosmane
+Title,Phone,Fax,Website,Address,Activity,Manager
+HERBIER DE L'ATLAS,0524445834,0524445835,N/A,"av. Abdelkrim Khattabi, résid. Errahma 40000 Marrakech - Morocco",export of aromatic and medicinal plants,"Mohamed Benider
+( Manager )"
+DIMA TERROIR MAROC,0661245728,N/A,http://www.maroc-terroir.com,imm. Fath 65 - Assif.B 40000 Marrakech - Morocco,"Distribution of local Moroccan products: spices, oils, honey, dried fruits and saffron","Patrick Marchand
+( Manager )"
+AFRI FRUIT,0522362878,N/A,N/A,"56, rue d' Ifrane - ex Toulouse , Cil 20200 Casablanca - Morocco","Production of almond oil, red fruits and dates. Fruit tree growing","Saâd Berrada Sounni
 ( Chairman and CEO )"
-COOPÉRATIVE TIFAOUT,0668773406,Centre Talgjount Ouled Berhil 83000 Taroudant - Morocco,Production of argan oil and local agricultural products,Nezha Aktir ( President)
-TOP TOPO,0522443166,"27, bd Abdellah Ben Yacine 20300 Casablanca - Morocco","topography, roads, land. Land expertise","Abdelhak ElHadri
-( Engineer )"
-COOPÉRATIVE TOUDARTE,0662419101,"Douar Akhsmou, commune rurale Imsouane Tamri 80000 Agadir - Morocco","Production, packaging and marketing of argan oil and its derivatives","Khalid Mssaoudi
+GROUPE KANTARI,0536617779,0536617778,N/A,km.2 route de Saïdia - BP 416 60300 Berkane - Morocco,Production and export of citrus fruits and vegetables,"Kamal Kantari
+( Chairman and CEO )"
+DOMAINE ELBOURA,0528852443,0528852306,N/A,Km.2 route Aït Iazza- BP 259 83000 Taroudant - Morocco,"Production, packaging and export of citrus fruits","Abdellah Radouani
+( Authorized representative )"
+LARAGEL,0539901890,0539900953,N/A,"Rte nationale Tanger - Km. 100 Laouamra, Ksar El Kebir 92000 Larache - Morocco",Production and export of fresh and frozen red fruits,"Mohamed Ghallab
+( Manager )"
+AGRO SAISS FOOD,0661600554,N/A,N/A,"5, route Ras El Mae 30000 Fés - Morocco",Export of fruits and vegetables,"Houssine Lahlou
+( Manager )"
+LA VALLÉE DU MIEL NATUREL,0522448814,0522319064,N/A,"112, rue Abou Mansour Taalabi 20550 Casablanca - Morocco",Beekeeping. Honey production,"Mostafa Ezzarzour
+( Manager )"
+SOHNA(société oléicole des huiles Nasma),0535654392,0535650314,N/A,"48 rue de Khouribga, Q.I. Dokkarat 30000 Fés - Morocco",Production and bottling of olive oil. black olive,"Mohamed Bouayad
+( Manager )"
+FANDY COPRAGRI(Cie agricole de commercialisation et de conditionnement des céréales et légumineuses),0522353141,0522350869,N/A,"bd Moulay Ismaïl , km 6,3 20300 Casablanca - Morocco",Import of cereals and legumes,ElHachmi Boutgueray ( President)
+ZINEGLOB,0528816352,N/A,N/A,"zone industrielle Sidi Bibi, Ait Baha 80000 Agadir - Morocco",Sale and export of argan oil and organic cosmetics,"Abdelghani Zine
+( Manager )"
+SANTIS,0522237407,0522236857,N/A,"7, rue Abou Ghaleb Chiani - ex Velay 20100 Casablanca - Morocco","Export of medicinal plants, spices.","Khalid Bennani
+( Manager )"
+VAINA CONCEPT,0661507406,N/A,N/A,"15, avenue Al Abtal , Agdal 10090 Rabat - Morocco",Sale of local products,"Manal Chraibi
+( Manager )"
+MLAH MECHICHE ALAMI,0538008500,0538005999,N/A,"Quartier industriel, rue 183 14000 Kénitra - Morocco",Rice producer. Agro industry. Seed marketing,"Fahd Mechiche Alami
+( General director )"
+KM FRUITS MAROC,0528222615,N/A,N/A,A.63 quartier industriel Ait Melloul 86150 Aït Melloul - Morocco,Export of fresh fruits and vegetables,"Khalifa Elidrissi
+( Manager )"
+COOPÉRATIVE TOUBKAL,0528241538,0528243387,N/A,zone industrielle 80150 Aït Melloul - Morocco,Cooperative: packaging of fruits and vegetables,"Jamal Amcassou
+( General director )"
+AFYACH,0662120981,N/A,N/A,"Lot. 314 bloc B, cité Hassania Anza - Ida ou Tanane 80000 Agadir - Morocco",Production and export of organic argan and prickly pear oil,"Ali Najah
+( Manager )"
+H.AGRI,0660929552,N/A,N/A,"Route Sebt Ait Milk, Biougra 80000 Agadir - Morocco",Production and export of fruits and vegetables,"Hafid Marda
+( Manager )"
+CHEVILLARD EQUINS,0663429789,N/A,N/A,"59, bd Mohamed Zerktouni , rés. les Fleurs, 7° étg. 20100 Casablanca - Morocco",Organic meat and milk processing and marketing workshop,"Mohamed Zedri
+( Manager )"
+MAISON DU MIEL,0528244907,N/A,N/A,Argana - 9 bloc B 86150 Aït Melloul - Morocco,Production of honey and natural bio-cosmetics,"Soufiane Oubouhou
+( Manager )"
+IMANDY GRAINS,0522325116,0522324037,N/A,"Douar Laasilat, lot. n° 24, Commune Khyayta 26402 Had Soualem - Morocco",Wholesale grain merchant,"Ahmed Chermati
+( Manager )"
+DIVINE FARMS,0662214271,N/A,N/A,"15, avenue Al Abtal , Agdal 10090 Rabat - Morocco","Cultivation of fresh mushrooms, medicinal mushrooms and edible mushrooms","Zouhir Isras
+( Manager )"
+MALMEN EXPORT,0661444564,N/A,N/A,"hay el Massira, 3 av. Idriss Lamhamdi 73000 Dakhla - Morocco",Export of fruits and vegetables,"Rachid ElBkiri
+( Manager )"
+WAZO PACKAGING,0528201082,N/A,N/A,"Agadir Baie, bloc B - bureau 105 80000 Agadir - Morocco","Production, packaging and export of citrus fruits","Abdelfattah Baalla
+( Manager )"
+COMANER,0802010068,0522449946,N/A,"119, av de l' Armée Royale , Epace Sofia 20000 Casablanca - Morocco",Agri-food products.,"Mounir Kouhen
+( Manager )"
+VITA SOUSS(Vitasouss),0528540229,0528540385,N/A,"180 cité Zaitoun, imm Jebha 83400 Sebt El Guerdane - Morocco",Packaging of citrus fruits and early vegetables,Youssef Jebha ( Manager)
+BEN RABIA GRAINS ET FILS(Minoterie et stockage des céréales Ben Rabia),0522452074,0522452176,N/A,"39, rue de Lille 20310 Casablanca - Morocco",Import-export of cereals and legumes,"Karim Benrabia
 ( Director )"
-COOPÉRATIVE TAITMATINE,0661063913,Commune rurale de Tiout - village Igoudine 83000 Taroudant - Morocco,Women's agricultural cooperative,Amina Ait Taleb ( President)
-DAELMED,0687172309,"22, av. Madiouna, 3° étg., lot. Ezzaitouna 46000 Safi - Morocco","Design, manufacture of hydroponic culture units and equipment","Azzouz Shieh
+CLÉMENTINE PRIM'ROSE,0522355929,0522340505,N/A,"9, avenue Khalid Bnou Loualid (Ain Sebaa) 20250 Casablanca - Morocco","Producer of cut flowers and cuttings, and avocados","Ali Bennani Smirès
 ( General director )"
-AGRIN MAROC,0535641463,QI. Sidi Brahim - BP 1683 30003 Fés - Morocco,"Seed multiplication, distribution of agricultural materials and substrates","Mouhssine Chami
+C.A.M.S.A.,0522287020,0522284771,N/A,"10, rue Alim Chatatani - ex Bolante , ang. rue Stockholm 20490 Casablanca - Morocco",Foodstuffs,"Ahmed Laghrari
+( Manager )"
+QUALITY BEAN MOROCCO,0528308426,0528308430,N/A,"bloc 2, Timersit 86150 Aït Melloul - Morocco","Production, packaging of fruits and vegetables","Said Hakkouchi
+( General director )"
+FRÊLUG,0522965212,0522965116,N/A,"Douar Ouled Khaddou, rte Moulay Thami, Ouled Azzouz 27223 Dar Bouazza - Morocco","Preparation and processing of fresh raw vegetables, washed, cut, packaged and ready for use","Amina Oudghiri
+( Manager )"
+SEMAPEX(Sélection Maraîchère de Production et Exportation),0528818546,0528818455,N/A,"Km 4,8 rte Sebt Ait Milk - BP 218 87200 Biougra - Morocco",Vegetable selection for the production and export of fruits and vegetables,"Régis Perret
+( Manager )"
+ENNEA TROPHI,0667171565,N/A,N/A,"81, hay Bahsine - Bensergao 80000 Agadir - Morocco","Export of fruits, vegetables and canned fish","Soukaina Mahily
+( Manager )"
+DARI COUSPATE,0537808721,0537808743,N/A,"quartier industriel, Ezzahra, ElOulja 11000 Salé - Morocco",Manufacture of pasta and couscous,"Mohamed Khalil
 ( Chairman and CEO )"
-COOPÉRATIVE TAGMAT AZIAR,0528821873,"Commune rurale Aziar, cercle Imouzare 80000 Agadir - Morocco",Production of argan oil and organic cosmetics,M'hamed Boukhanfer ( President)
-PROXAGRI,0528930570,hay Kassam 01 N11 rez de chaussée 73000 Dakhla - Morocco,Any agricultural support action on behalf of third parties,Roland Gaudiau ( Manager)
-MCARE(The Moroccan Company for Agricultural and Rural Engineering),0530092066,"56, rue Brahim Roudani , imm. 56, Q. de l'Océan 10050 Rabat - Morocco",Technical and financial support for farmers and investors in agriculture,"Fatima Idbelgdif
+GRADERCO,0522499890,0522264941,N/A,"104, rue Abderrahmane Sahraoui 20000 Casablanca - Morocco",Trade in cereals and derivatives,"Youssef Benosmane
+( Chairman and CEO )"
+PERGOLA STAR,0535456604,0535456604,N/A,"lotiss. Azzaytoune, tranche B, imm.E-13, 3°étage 50050 Meknès - Morocco","Planting of vineyards, construction of greenhouse shelters, anti-hail net","Mirssad Barguig
 ( Manager )"
-COMANER,0802010068,"119, av de l' Armée Royale , Epace Sofia 20000 Casablanca - Morocco",Agri-food products.,"Mounir Kouhen
+IGODAR FOOD LOGISTIC,0522666691,N/A,N/A,"bd Anassij -ex.B- Q.I. Aïn Sebaa , Q.I. Est 20600 Casablanca - Morocco",Trade and storage of cereals and legumes,"Hassan Kheiri
 ( Manager )"
-FELLAH TECH,0520260742,32 rue Benatya 40000 Marrakech - Morocco,Study office. Design of agricultural analysis machines,"Amine Réda ElBikri
+ZINNIALIFE,0524610941,0524610941,N/A,"15 villa impasse route aviation, lot. Kilani 46000 Safi - Morocco",Production and sale of natural cosmetic and edible oils,"Ahmed ElManani
+( Manager )"
+O.N.I.C.L.(Office national interprofessionnel des céréales et des légumineuses),0537217302,0537705252,N/A,"3, avenue Moulay Hassan 10000 Rabat - Morocco",Cereals and legumes.,"Aziz Abdelali
+( General director )"
+DEPALIM(Développement des exportations des produits alimentaires du Maroc),0522619252,0522621376,N/A,"23, rue Souleimane El Farissi , Ain Borja 20300 Casablanca - Morocco","Processing, packaging of spices, herbs and aromatics","Driss Terrab
+( Managing Director )"
+FRESH & SWEET,0777237586,N/A,N/A,"N° 99, bloc E - 2° étg., Zaitoune Tikiouine 80000 Agadir - Morocco",Packaging and export of agricultural products,"Khalid Ismaili
+( Manager )"
+LES DOMAINES ZNIBER,0535300004,0535300005,N/A,"Domaine Ait Harzallah, par haj Kaddour 14122 El Hajeb - Morocco","Production of agricultural products, viticulture","Rita Maria Zniber
+( Chairman and CEO )"
+CERELIS,0522409788,0522409789,N/A,"bd Moulay Ismaïl , zone Logistique Cité Mita, Roches Noires 20290 Casablanca - Morocco","Foodstuffs, cereals, legumes","Mustapha Jamal Eddine
+( Chairman and CEO )"
+DISTRIBIO,0522527413,0522526823,N/A,"qu. les Crêtes (Californie) , résid. Miamar 20100 Casablanca - Morocco",Import and distribution of organic products,"Zineb Laghzaoui
+( General director )"
+ARBOR OULMES(Sté arboricole d'Oulmès),0537523148,0537523123,N/A,"bd de Sfax -ex BenAissa Ejarouani , c/o Frigos Tarik, Q.i. Est - Ain Sebaa 20250 Casablanca - Morocco",Production of fruits and vegetables,"Nezha Sakkat
+( Manager )"
+ATLAS AGRUMES,0537670011,0537674236,N/A,"5, rue Kadi Senhaji , Souissi 10000 Rabat - Morocco",Export of agricultural products: citrus fruits,"Rachid Fahmane
+( Manager )"
+DAR LEMLIH(Coopérative Dar Lemlih),0664406996,N/A,N/A,"360, hay Andalous 15400 Tiflet - Morocco","Bee products, amlou, propolis, olive oil, argan oil",Mouna Bennis ( President)
+CAP AGRO,0524436390,0524420699,N/A,"Av. Mansour Eddahbi, rés. Jaafar imm. B n° 2 - Guéliz 40000 Marrakech - Morocco",Agricultural products: citrus fruits,"Youssef Dinia
+( Manager )"
+AGROPROS,0522620998,0522628215,N/A,"22, bd Hassan El Alaoui , Ain Borja 20300 Casablanca - Morocco","certified seeds: legumes, oilseeds and vegetables",Mohamed Benchaib ( Manager)
+COPAC(Copacplant),0525046599,0525046599,N/A,"Bloc 1, n° 1 Agdal - 2° étg. 86150 Aït Melloul - Morocco","Agri-food export: fruits, vegetables, citrus fruits, frozen fish","Abdelhadi Ismaili
+( Manager )"
+RIHANNA FOODS,0522206220,N/A,N/A,"34, rue Najib Mahfoud -ex Ollier 20060 Casablanca - Morocco",Sale of fresh and frozen fruit,"Amine ElHaddaoui
+( Manager )"
+FRIGOS TARIK(entrepôts frigorifiques Tarik),0522354922,0522662580,N/A,"bd de Sfax -ex BenAissa Ejarouani , Q.I. Ain Sebaa 20950 Casablanca - Morocco","Conservation, packaging, export of fresh fruits and vegetables","Nezha Sakkat
+( Chairman and CEO )"
+COOPÉRATIVE TAMAYNOUTE,0670768374,N/A,N/A,Douar Azrarag commune rurale Drarga 80000 Agadir - Morocco,"Food and cosmetic argan oil, honey, amlou and organic cosmetic products","Keltouma Zaitouni
+( Manager )"
+SOCONARJISS,0535726832,0535729276,N/A,"Z.I. Bensouda Ennamae, lot. 355 30000 Fés - Morocco","Drying, packaging of dried fruits. Crisps, snacks","Hachimi Belghit
+( Manager )"
+JAVABICA,0661142675,N/A,N/A,zone industrielle Aïn Slougui 50000 Meknès - Morocco,Production and processing of dried prunes,"Abdelilah Sassioui
+( Manager )"
+FORAFRIC,0522255645,0522352017,N/A,"89, bd Massira El Khadra 20100 Casablanca - Morocco","Cereals, seeds, legumes, couscous",Ari Bouzbib ( President) Groupe
+LYMOUNA MATYSHA,0528841453,0528540087,N/A,"321, imm. n° 6, Narjiss Amal II - Bensergao 80000 Agadir - Morocco",Production of early vegetables and fruits,"Taquie-Dine Cherradi ElFadili
+( Manager )"
+ZALAR AGRI,0660746076,N/A,N/A,"RN 9, C.R. Sidi Hejjaj, Oued Hassar 20640 Tit Mellil - Morocco","Production, packaging and marketing of fruits and vegetables","Ali Berbich
+( Manager )"
+IZDA,0529001002,0522734983,N/A,"route de Rabat (r.p. 1) , Km 12,5 - Sidi Bernoussi 20600 Casablanca - Morocco",grain trade,"Kacem Raji
+( General director )"
+BONONI,0522965236,0522965425,N/A,29 zone industrielle 20220 Dar Bouazza - Morocco,"packaging of dried fruits, spices and starches","Mohamed Hatimy
+( Manager )"
+CAPITAL AGRI-SCIENCE,0522338727,0522338034,N/A,"39, avenue Lalla Yacout 20080 Casablanca - Morocco","Distribution of agricultural inputs, corn and seeds","Adil Jawad
+( General director )"
+ARBOR SUD,0522354922,0522662580,N/A,"bd de Sfax -ex BenAissa Ejarouani , c/o Frigos Tarik, Q.i. Est - Ain Sebaa 20250 Casablanca - Morocco",Production of tropical fruits and vegetables,"Nezha Sakkat
+( Manager )"
+SAISS CÉRÉALES,0535655007,0535655153,N/A,"lot. 61, q.i. Bensouda 30000 Fés - Morocco","Import and trade of animal feed, cereals + legumes and derivatives","Mohamed Sebti
+( Chairman and CEO )"
+SITI(sté impériale des thés et infusions),0524388500,0524341400,N/A,"Jnane Akioud, lot. 153, rte de Safi, Sidi Ghanem 40000 Marrakech - Morocco",Packaging of medicinal plants and teas,"Amine ElBaroudi
 ( Co manager )"
-AGRI-SOUSS(groupement des agriculteurs du Souss),0528226760,"imm.Najah, cité Anajah 80000 Agadir - Morocco",Group of 9 fruit and vegetable exporters,"Abdelmalek Abounnaïm
+COPRALIM(sté des produits alimentaires),0522970102,0522970597,N/A,"route de Médiouna , km.11,5 - douar Lahfaya 20450 Casablanca - Morocco",import of food products,Latifa Bendaou ( Vice président)
+MILK PRODUCTS MOROCCO,0522618676,0522624155,N/A,"3, rue Abou Bakr El Wahrani , La Villette 20320 Casablanca - Morocco","butter in trays, cheese, honey","Ahmed Nassreddine Doblali
 ( Chairman and CEO )"
-COPAG(Coopérative agricole de Taroudant),0528536666,zone industrielle Aït Iazza - BP 1001 Freija 83200 Taroudant - Morocco,"Production of orange juice, animal feed, dairy products. Integrated slaughterhouse","Mhamed Loultiti
+CASA GRAINS,0529004544,0522332044,N/A,"rue El Gara (Oukacha) , angle rue Capitaine Vuillanier, Ain Sebaâ 20300 Casablanca - Morocco","cereals and animal feed, peanut seeds, yellow corn, soybeans...","Ahmed Chermati
+( General director )"
+MATYSHA(Groupe Laymouna-Matysha),0528841453,0528843990,N/A,"Les Galeries Al Inbiaat, imm. n° 4 - av. Hassan II 80000 Agadir - Morocco",Production of early vegetables and fruits,"Taquie-Dine Cherradi ElFadili
 ( Chairman and CEO )"
-AGQ LABS MAROC,0523314926,"152, zone indust Sud-Ouest , 4° étg. 28810 Mohammedia - Morocco","Laboratory and consultancy in agriculture, food safety, environment, mines, health","Zakiya ElBakkali
-( General director )"
-COOPÉRATIVE AFOULKI,0528270528,"Village Aït Hssaïn, Commune Idmine Km 50 rte de Marrakech 80000 Agadir - Morocco",Production and sale of certified organic argan oil,Fatima Aït Moussa ( President)
-CAG CONSULTING(Compliance Advisory Group),0663178715,"410, bd Mohamed Zerktouni , imm. Hamad, 1° étg. 20230 Casablanca - Morocco",Agro-industry consultant for advice & support for production and export companies,"Hayet Ben Saber
-( General director )"
-NOIX SPINOSA,0661981380,Centre de Mirleft 85200 Sidi Ifni - Morocco,Production and marketing of local products,"Hafid Fahal
-( Manager )"
-SOWIT MAROC,0662306539,"av. Omar El Khayam , ang. rue Tanane Khadiri, rés. du Caf 20200 Casablanca - Morocco",Precision Agriculture Services,"Hamza Bendahou
+AKSAM(Alf Kessab Al Maghreb),0661966072,N/A,N/A,"Km 5,3 RP 3575 - Laghdira 24150 Lbir Jdid - Morocco","Sale of cereals, animal feed and agricultural products","Abdelghani Baraka
 ( Co manager )"
-AGRIEDGE,0666105841,"Lot. 660, hay Moulay Rachid , Mohammed VI Polytechnic University 43150 Ben Guerir - Morocco",Optimization of agricultural irrigation by satellite imagery,"Faissal Sehbaoui
-( General director )"
-COOPÉRATIVE TAMAYNOUTE,0670768374,Douar Azrarag commune rurale Drarga 80000 Agadir - Morocco,"Food and cosmetic argan oil, honey, amlou and organic cosmetic products","Keltouma Zaitouni
+DIAR ARGAN(Solidaire service),0661576097,0528828486,N/A,"104, C.r. Idder Isser 83000 Taroudant - Morocco","Production, export, sale of Argan and organic cosmetics","Latifa Boukdour
 ( Manager )"
-COOPÉRATIVE BIO CANNAT,0609491048,"Km 10, route P4102 direction Beni Yahmed, Bab Berred 91000 Chefchaouen - Morocco","Cannabis treatment, medical use.","Jaber ElHababi
-( Commercial director )"
-COOPÉRATIVE BIOLABELDI,0654881733,Commune Ghoualem 15000 Khémisset - Morocco,"Organic production of cereals, aromatic & medicinal plants, olive oils and poultry",Mohamed Fenniri ( President)
-GESTAG,0528215002,"1er immeuble Ennour, Cité Dakhla 80000 Agadir - Morocco",Any agricultural support action on behalf of third parties,"Roland Gaudiau
+IBES(International Biological and Ecological Solutions),0528246783,0528308597,N/A,"Z.I. Ait Melloul, rue 6 - lot. 699B 80350 Inezgane - Morocco",Import of agricultural products: biostimulant products,"Omar Aghai
 ( Manager )"
-TOURBA,0525073100,"Université Mohammed VI Polytechnique, lot. 660 , hay Moulay Rachid 43150 Ben Guerir - Morocco",Carbon sequestration projects on farms,"ElMostafa ElHabib
+CMH(Cheikh Maealainin Holding),0661402580,N/A,N/A,"206, avenue Al Mostakbal (c.y.m.) 10050 Rabat - Morocco","Import of cereals, legumes and other food products","Hassan Maelainin
+( Manager )"
+FLORIMOND DESPREZ MAGHREB,0522325151,0522533545,N/A,"Km 6, Rte Elgara - BP 251 26100 Berrechid - Morocco","seeds of cereals, fodder, maize, sunflower",Ahmed Ouayach ( President)
+ZINE CÉRÉALES,0522963434,0522963435,N/A,"zone indust du Sahel , route principale 3011 26402 Had Soualem - Morocco","Manufacture and import of fertilizers, cereals and animal feed","Noureddine Zine
+( Manager )"
+FOOD GROUP TRADING - FGT,0522392013,N/A,N/A,"26, bd Massira El Khadra 20100 Casablanca - Morocco",Distribution of food products,"Ali Salhi
+( Manager )"
+PLANASA PÉPINIÈRE MAROC,0537326276,N/A,N/A,km.5 route de Sidi Yahia 14000 Kénitra - Morocco,Production and packaging of fruits and vegetables,"Michael Brinkmann
+( Manager )"
+EXPRESSBOXE,0604784913,N/A,N/A,"59, av. Al Istiqlal, rés. Chirine - bur. 10 14000 Kénitra - Morocco","import, export and trade of food products, fruits, vegetables, fresh and frozen citrus fruits","Brahim Rhoulimi
+( Manager )"
+TRADIPAL(Traitement distribution des produits alimentaires),0523311921,0523304762,N/A,"83, zone indust Sud-Ouest 28810 Mohammedia - Morocco","Processing, distribution of food products","Taoufik Soussi
+( Manager )"
+PURNAT,0522210687,0522210686,N/A,"bd Mohammed VI (ex rte Mediouna) , rue 98 n° 18, rés. Yasmina 5 20153 Casablanca - Morocco",packaging of almonds,"Khalid Bennani
+( Manager )"
+TKADDALISHOP,0681207591,N/A,N/A,"37, rue Idriss Al Akbar , 3° étg., Hassan 10000 Rabat - Morocco","Delivery of fruits, vegetables, chickens and meats","Mohamed Ait Mouss
+( Manager )"
+SAPIAMA(Société arabe pour les investissements agricoles Maroc),0528550292,0528550293,N/A,"325, av. Hassan II 80000 Agadir - Morocco","Production, packaging of early vegetables, citrus tree nursery. ISO 9001/2008 certified",Tariq Kabbage ( President)
+MILLE FOOD,0522806056,N/A,N/A,"71, bd de la Grande ceinture (h.Farah) , rond-point Hay Farah, rue n° 30 20550 Casablanca - Morocco",Dried fruit seller,"Achour Bennaceur
+( Manager )"
+EFAS(Entreprise féminine rurale d'économie sociale),0528216575,N/A,N/A,village Aghraisse - BP 149- province Chtouka 87052 Aït Amira - Morocco,Production and marketing of argan oil and local products,"Lahoussine Bennana
+( Manager )"
+PACK SOUSS,0528242178,0528241174,N/A,route d'Admime Aït Melloul 80000 Agadir - Morocco,Packaging and export of citrus fruits,Zhor Bennani Smirès ( Administrateur)
+FENAGRI(Fédération nationale de l'agro-alimentaire),0522997055,0522996358,N/A,"23, bd Mohamed Abdou , c/o Cgem 20340 Casablanca - Morocco",National Federation of Agribusiness. 95 members,Abdelmounaim ElEulj ( President)
+CROFERT,0642445413,N/A,N/A,"hay Amal IV (Sidi Bernoussi) , rue 18 - 3° étg. 20260 Casablanca - Morocco","Packaging of capers, import-export of agricultural products","Khalid ElMafkouk
+( Manager )"
+SOFRALIM,0522970124,0522970597,N/A,"km.11,5 route de Mediouna - Ouled Haddou, Lahfaya 20180 Bouskoura - Morocco",Foodstuffs,"Omar Tlemsser
+( Manager )"
+A2 DISTRIBUTION,0675585149,N/A,N/A,"9, rue El Araar -ex Cantenac , ang. Lalla Yacout, rés. Galis, 4° étg. 20600 Casablanca - Morocco",Distribution of food products,"Mohamed Hammami
+( Manager )"
+LES DOMAINES VITICOLES DU SAÏS,0535300006,0535300005,N/A,"11, rue ibn Khaldoun 50000 Meknès - Morocco",Viticulture.,"Rita Maria Zniber
+( Chairman and CEO )"
+AGRI BENJAA,0661803342,0528249081,N/A,"Zone industrielle Ait Melloul, lot. A783 80000 Agadir - Morocco","Export of agricultural products: carobs, bitter almonds","Mohamed Benjaa
 ( General director )"
+IT FOODS,0600949095,0522541379,N/A,"144, rue Mohamed Smiha , rés. Jawharate 9 Med Smiha, 6° étg. n° 35 20200 Casablanca - Morocco",,"Ismail Tissir
+( Manager )"
+SOPROFEL(sté de production de fruits et légumes),0528818484,0528818567,N/A,"Douar Ourti, cr. Oued Essafa 80200 Biougra - Morocco",Agriculture and packaging of market garden products. Seedling production,"Loïc Puech
+( Chairman and CEO )"
+ASADI SEND,0652504497,N/A,N/A,"10, bd de la Liberté , 3° étg. 20120 Casablanca - Morocco",Import & export of all fresh agricultural products,"Abdelouahad Asadi
+( Manager )"
+APIDARGAN,0522818111,0522319064,N/A,"5, rue d' Amsterdam 21500 Casablanca - Morocco",Production and distribution of cosmetics based on argan oil,"Mostafa Ezzarzour
+( Manager )"
+KABBAGE SOUSS SKS(Station d'emballages Kabbage Souss),0528845907,0528845905,N/A,"325, av. Hassan II, imm. Kabbage 80000 Agadir - Morocco","Production, packaging and export of citrus fruits",Tariq Kabbage ( President)
+OUBA-CAROUBE,0528812849,N/A,N/A,"Imm. Agadir Office Center, 3° étg. n° 33 , Bensergaou Founty 80000 Agadir - Morocco",Processing and marketing of carob and derivatives,"Ahmed Oubari
+( Manager )"
+LE CHANT D'OISEAU,0767496075,N/A,N/A,"Douar Ouled Sguir, commune Issen 83000 Taroudant - Morocco","Production of aromatic, medicinal, organic plants","Karima Beremdane
+( Manager )"
+KB GROUP,0522278162,0522277991,N/A,"2, rue du Clos de Provence , ang. Bd d'Anfa - 5° étg. 20000 Casablanca - Morocco",Production of citrus fruits and olive oils,"Abdellatif Bennani
+( Chairman and CEO )"
+ATLAS BERRY FARMS,0528232336,N/A,N/A,"488, lot. Maghrib Al Arabi, Lamzar 86150 Aït Melloul - Morocco","Production, packaging and export of all agricultural products","Kyle Robert Bunstein
+( Manager )"
+NECTAROME,0524310011,0524310004,N/A,"Centre d'affaire Borj Menara 2, bloc B - 4° étg. 40000 Marrakech - Morocco","Production of vegetable oils, essential oils and natural cosmetics","Youssef Dahbi
+( Manager )"
+OASIS DU SUD,0524848580,0524848847,N/A,Centre Mhamid Elghizlane 47402 Zagora - Morocco,"Date products: Natural syrup, date jam and paste, natural fresh dates","Abdelouahab ElGasmi
+( Manager )"
+ALF ISSEN,0528216262,0528526229,N/A,"Zaouiat issen, commune rurale iddir - Oulad Teima 83350 Taroudant - Morocco",Wholesale of cereals and compound feed for livestock,"ElHafid Ouakkaha
+( Manager )"
+AGRI-SOUSS(groupement des agriculteurs du Souss),0528226760,0528223242,N/A,"imm.Najah, cité Anajah 80000 Agadir - Morocco",Group of 9 fruit and vegetable exporters,"Abdelmalek Abounnaïm
+( Chairman and CEO )"
+DOMAINES DU VAL D'ARGAN,0524783467,0524472679,N/A,"Douar Aït Hamed - BP 19, Province d' Essaouira 44000 Essaouira - Morocco","Wine and olive farm 35 hectares. Guest house, restaurant",Charles Melia ( Manager)
+LUKUS - CIE AGRICOLE(compania agricola del Lukus),0539900818,0539900999,N/A,Route de Rabat - BP 39 92000 Larache - Morocco,"Cultivation and packaging of citrus fruits, strawberries, blueberries.","Omar Benjdya
+( Chairman and CEO )"
+COOPÉRATIVE AFOULKI,0528270528,0528273109,N/A,"Village Aït Hssaïn, Commune Idmine Km 50 rte de Marrakech 80000 Agadir - Morocco",Production and sale of certified organic argan oil,Fatima Aït Moussa ( President)
+GRENIERS DU SAÏSS (LES),0535729082,0535726705,N/A,"zone indust Bensouda , lot. Al Wafae, lot. 61 30098 Fés - Morocco","Trade in carob, cereals, legumes and derivatives","Abdellah Sebti
+( General director )"
+LES DOMAINES AGRICOLES,0522953300,0522919749,N/A,"route d' Azemmour , km.5 20050 Casablanca - Morocco",Agricultural and organic productions.,"Bouamar Bouamar
+( General director )"
+IGHA-MAROC,0665138117,N/A,N/A,"61, avenue Lalla Yacout , 1° étg. 20300 Casablanca - Morocco","Import and export of fresh fruits and vegetables, agricultural products","Abdelkarim Ighafi
+( Director )"
+MULTIGRAIN,0661503940,0522448785,N/A,"rue Mohamed Errachid -ex Plage , Imane center, 6° étg. n° 2 20000 Casablanca - Morocco","Import-export, trade in cereals and legumes","Mohamed Benzakour
+( Manager )"
+SUNCROPS,0528812318,0528812319,N/A,27 place de l'OUA - imm.Tinmel 80000 Agadir - Morocco,"Production, packaging and export of fruits and vegetables: tomato, pepper","Ahmed Mouhmouh
+( Manager )"
+COOPÉRATIVE PRIMASSA,0661220876,0528243826,N/A,Zone industrielle Tassila 80350 Agadir - Morocco,Primeurs packing station,"Nabil Ait Kassou
+( Manager )"
+ARABIA FOOD,0523303243,0523311123,N/A,zone indust Sud-Ouest 28810 Mohammedia - Morocco,"Import of jam, honey and butter, flavored syrup, anchovies, olive oil","Abdelkarim Amhil
+( General director )"
+MADEC(Consortium marocain de commercialisation),0522650900,0522650911,N/A,"quartier Lissasfa, route d'El Jadida , km. 10,5 20300 Casablanca - Morocco",Distribution of consumer products,"Omar ElEulj
+( Chairman and CEO )"
+STAR LÉGUMES,0522562485,N/A,N/A,"hay Sidi Othmane , Marché de gros de fruits et légumes, bloc 6 n°7 20450 Casablanca - Morocco","Production and import of fruits and vegetables, condiments and spices, dried fruits and seeds","Adil ElBahraoui
+( Manager )"
+MONIGRAINS,0539311853,N/A,N/A,"Branes, lot. Narjis raisin 20, entre sol - BP 3240 90000 Tanger - Morocco",grain marketing,"Mounir Gounou
+( Financial director )"
+TRIA GROUP,0522732010,0522731180,N/A,"route de Rabat (r.p. 1) , Km 11,500 20600 Casablanca - Morocco",Industrial milling.,Mustapha Jamal Eddine ( President)
