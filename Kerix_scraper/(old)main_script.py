@@ -1,7 +1,6 @@
 import random
 import time
 import bs4
-import requests
 from requests import Session
 from twocaptcha import TwoCaptcha
 from datetime import datetime
@@ -13,9 +12,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
+import os
+from dotenv import load_dotenv
+import time
 
+load_dotenv()
+api_key = os.getenv('API_KEY')
 
-API_KEY = '48d879d5ca11d1f5ff14070cb4308a64'
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -43,7 +46,7 @@ def setup_driver():
     )
     return driver
 
-solver = TwoCaptcha(API_KEY)
+solver = TwoCaptcha(api_key)
 
 def solve_captcha(driver, site_key, url):
     try:
@@ -91,15 +94,25 @@ def get_page_html(url):
     finally:
         driver.quit()
 
-def extract_companies_info(url, output_csv):
+def extract_companies_info(url):
     html = get_page_html(url)
     if not html:
-        return
+        return None
 
     soup = bs4.BeautifulSoup(html, 'html.parser')
     
+    # Extracting the required information
     phone = soup.find('p', class_='label-tel')
     phone = phone.get_text(strip=True) if phone else 'N/A'
+
+    fax_button = soup.find('button', class_='faxCli')
+    fax_section = fax_button.find_next('div', class_='collapse') if fax_button else None
+    fax_tag = fax_section.find('p', class_='label-tel') if fax_section else None
+    fax = fax_tag.get_text(strip=True) if fax_tag else 'N/A'
+
+
+    website = soup.find('a', class_='btn btn-down website')
+    website = website.get('href') if website else 'N/A'
     
     address = soup.find('p', class_='card-text')
     address = address.get_text(strip=True) if address else 'N/A'
@@ -107,66 +120,73 @@ def extract_companies_info(url, output_csv):
     title = soup.find('h1', class_='card-title card-title-md mt-2')
     title = title.get_text(strip=True) if title else 'N/A'
     
-    activity_section = soup.find('h5', style="font-family:'Lato', sans-serif;font-weight: bold;color:#000000;font-size:15px")
+    activity_block = soup.find('div', class_='card-body pb-0')
+    activity_section = activity_block.find_next('h5', style="font-family:'Lato', sans-serif;font-weight: bold;color:#000000;font-size:15px") if activity_block else None
     activity = activity_section.find_next('p').get_text(strip=True) if activity_section else 'N/A'
     
     manager = soup.find('p', class_='par-list')
     manager = manager.get_text(strip=True) if manager else 'N/A'
     
-    with open(output_csv, 'a', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow([title, phone, address, activity, manager])
+    return [title, phone, fax, website, address, activity, manager]
 
-
-def extract_links(url, output_csv):
+def extract_links_and_info(url, output_csv):
     page_number = 1
     links = set()
-    previous_html = None
-    while True:
-        paginated_url = f"{url}?page={page_number}"
-        html = get_page_html(paginated_url)
-        if not html or html == previous_html:
-            break
-        previous_html = html
-        soup = bs4.BeautifulSoup(html, 'html.parser')
-        card_bodies = soup.find_all('div', class_='card-body')
-        if not card_bodies:
-            break
-        for card in card_bodies:
-            anchors = card.find_all('a')
-            for a in anchors:
-                href = a.get('href')
-                if href:
-                    if href.startswith('https://www.kerix-export.net'):
-                        links.add(href)
-        
-        next_button = soup.find('a', class_='page-link', rel="next")
-        if not next_button:
-            break
-        page_number += 1
+    base_url = 'https://www.kerix.net'
     with open(output_csv, 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
+        while True:
+            paginated_url = url if page_number == 1 else f"{url}?page={page_number}"
+            html = get_page_html(paginated_url)
+            if not html:
+                break
+            
+            soup = bs4.BeautifulSoup(html, 'html.parser')
+            card_bodies = soup.find_all('div', class_='card-body')
+            if not card_bodies:
+                break
+            for card in card_bodies:
+                anchors = card.find_all('a', class_='btn-success btn btn-sm bg-green-light pull-right animate__animated animate__pulse mt-2')
+                for a in anchors:
+                    href = a.get('href')
+                    if href:
+                        full_link = base_url + href
+                        links.add(full_link)
+                
+            next_button = soup.find('a', class_='page-link', rel="next")
+            if not next_button:
+                break
+            page_number += 1
+        
         for link in links:
-            writer.writerow([link])
-    
-    return links
+            company_info = extract_companies_info(link)
+            if company_info:
+                writer.writerow(company_info)
 
 if __name__ == "__main__":
-    companies_links_csv = 'companies_links.csv'
-    company_info_csv = 'companies_info.csv'
-    # with open('scraping_urls.csv', newline='') as csvfile:
-    #     reader = csv.reader(csvfile, delimiter=',')
-    #     for row in reader:
-    #         url = row[0]
-    #         extract_links(url, output_csv)
-
-    
-    with open(company_info_csv, 'w', newline='') as csvfile:
+    start_time = time.time()
+    output_folder = 'results'
+    os.makedirs(output_folder, exist_ok=True)
+    output_csv = os.path.join(output_folder, 'companies_info.csv')
+    with open(output_csv, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['Title', 'Phone', 'Address', 'Activity', 'Manager'])  # Header row
+        writer.writerow(['Title', 'Phone', 'Fax','Website','Address', 'Activity', 'Manager'])  
+
+    urls_folder = './urls'
+    urls_file = os.path.join(urls_folder, 'scraping_urls.csv')
     
-    with open(companies_links_csv, newline='') as csvfile:
+    with open(urls_file, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
         for row in reader:
             url = row[0]
-            extract_companies_info(url, company_info_csv)
+            extract_links_and_info(url, output_csv)
+            
+    with open(output_csv, 'r', newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        row_count = sum(1 for row in reader) - 1
+    end_time = time.time()  
+    duration = end_time - start_time    
+    Accuracy = (row_count/175)*100 
+    print(f"Scraped {row_count} companies in {duration:.2f} seconds")
+    print(f"Acccuracy of {Accuracy:.2f}%")
+    
