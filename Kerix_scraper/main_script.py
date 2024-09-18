@@ -1,6 +1,5 @@
 import time
 import csv
-from selenium_stealth import stealth
 import os
 from dotenv import load_dotenv
 from tqdm import tqdm
