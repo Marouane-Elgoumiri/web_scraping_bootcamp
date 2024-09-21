@@ -1,12 +1,12 @@
 import time
 import csv
-from selenium_stealth import stealth
 import os
 from dotenv import load_dotenv
+import sys
 from tqdm import tqdm
 from process_upload import extract_links_and_info
 from process_upload import process_and_upload
-
+     
 if __name__ == "__main__":
     start_time = time.time()
     output_folder = 'results'
@@ -25,7 +25,14 @@ if __name__ == "__main__":
         
     for url in tqdm(urls, desc="Scraping URLs"):
         extract_links_and_info(url, output_csv)
-            
+
+    total_urls = len(urls)
+    for i, url in enumerate(urls):
+        extract_links_and_info(url, output_csv)
+        progress = int((i + 1) / total_urls * 100)
+        print(f"Progress: {progress}%", flush=True)
+        sys.stdout.flush()     
+        
     with open(output_csv, 'r', newline='') as csvfile:
         reader = csv.reader(csvfile)
         row_count = sum(1 for row in reader) - 1

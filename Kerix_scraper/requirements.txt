@@ -1,0 +1,7 @@
+bs4
+pymongo
+selenium
+selenium-stealth
+tqdm
+twocaptcha
+python-dotenv
