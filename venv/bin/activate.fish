@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/hansi/Desktop/githubRepo/web_scraping_bootcamp/venv"
+set -gx VIRTUAL_ENV "/home/hansi/Desktop/githubRepo/scraper/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

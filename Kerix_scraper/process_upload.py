@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-NO_THREADS = 6
+NO_THREADS = 8
 RETRY_LIMIT = 3
 TIMEOUT = 60 
 
@@ -49,9 +49,9 @@ def setup_driver():
     options.headless = True
 
     options.add_argument("--headless")  
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")  
-    options.add_argument("--disable-dev-shm-usage") 
+    # options.add_argument("--disable-gpu")
+    # options.add_argument("--no-sandbox")  
+    # options.add_argument("--disable-dev-shm-usage") 
     options.add_argument(f"user-agent={get_random_user_agent()}")
    
     service = Service(log_path='chromedriver.log')
