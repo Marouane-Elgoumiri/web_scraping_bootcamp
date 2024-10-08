@@ -74,7 +74,7 @@ def get_page_html(url):
             page_source = driver.page_source
             print(page_source)
             # Take a screenshot for debugging
-            driver.save_screenshot('captcha_page.png')
+            driver.save_screenshot('tg')
             # Switch to the iframe containing the CAPTCHA
             iframe = driver.find_element(By.TAG_NAME, 'iframe')
             driver.switch_to.frame(iframe)

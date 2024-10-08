@@ -9,6 +9,7 @@ import csv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -48,13 +49,13 @@ def setup_driver():
     options = Options()
     options.headless = True
 
-    options.add_argument("--headless")  
+    # options.add_argument("--headless")  
     # options.add_argument("--disable-gpu")
     # options.add_argument("--no-sandbox")  
     # options.add_argument("--disable-dev-shm-usage") 
     options.add_argument(f"user-agent={get_random_user_agent()}")
    
-    service = Service(log_path='chromedriver.log')
+    service = Service(executable_path=ChromeDriverManager().install(), log_path='chromedriver.log')
     driver = webdriver.Chrome(service=service, options=options)
     stealth(driver,
         languages=["en-US", "en"],
@@ -143,7 +144,7 @@ def extract_companies_info(url):
     address = address.get_text(strip=True) if address else 'N/A'
     
     title = soup.find('h1', class_='card-title card-title-md mt-2')
-    title = title.get_text(strip=True) if title else 'N/A'
+    title = title.get_text(strip=True) if title else None
     
     activity_block = soup.find('div', class_='card-body pb-0')
     activity_section = activity_block.find_next('h5', style="font-family:'Lato', sans-serif;font-weight: bold;color:#000000;font-size:15px") if activity_block else None
@@ -152,6 +153,9 @@ def extract_companies_info(url):
     manager = soup.find('p', class_='par-list')
     manager = manager.get_text(strip=True) if manager else 'N/A'
     
+    if not title:
+        return None
+
     return [title, phone, fax, website, address, activity, manager]
 
 def extract_links_and_info(url, output_csv):
@@ -197,20 +201,38 @@ def send_csv_to_mongodb(csv_file, mongo_uri, db_name, collection_name):
     client = MongoClient(mongo_uri)
     db = client[db_name]
     collection = db[collection_name]
-
     
+    # Create a unique index on the Title field
+    collection.create_index('Title', unique=True)
+    
+    unique_titles = set()
+    unique_data = []
+
     with open(csv_file, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
-        data = list(reader)
-        if data:
-            collection.insert_many(data)
-            print(f"Inserted {len(data)} records into MongoDB collection '{collection_name}'")
-        else:
-            print("No data found in CSV file")
+        for row in reader:
+            title = row.get('Title')
+            if title and title not in unique_titles:
+                unique_titles.add(title)
+                unique_data.append(row)
+    
+    if unique_data:
+        try:
+            collection.insert_many(unique_data, ordered=False)
+            print(f"Inserted {len(unique_data)} unique records into MongoDB collection '{collection_name}'")
+        except errors.BulkWriteError as e:
+            # Handle duplicate key errors
+            write_errors = e.details['writeErrors']
+            print(f"Bulk write error: {len(write_errors)} duplicates found.")
+            for error in write_errors:
+                print(f"Duplicate entry found for Title: {error['op']['Title']}")
+    else:
+        print("No unique data found in CSV file")
             
     client.close()
 
 def process_and_upload(urls, output_csv, mongo_uri, db_name, collection_name):
+    unique_titles = set()
     with ThreadPoolExecutor(max_workers=6) as executor:
         futures = [executor.submit(extract_companies_info, link) for link in urls]
         with open(output_csv, 'a', newline='') as csvfile:
@@ -218,8 +240,9 @@ def process_and_upload(urls, output_csv, mongo_uri, db_name, collection_name):
             for future in as_completed(futures):
                 try:
                     company_info = future.result()
-                    if company_info:
+                    if company_info and company_info[0] not in unique_titles:
                         writer.writerow(company_info)
+                        unique_titles.add(company_info[0])
                 except Exception as e:
                     logging.error(f"Error processing company info: {e}")
 
