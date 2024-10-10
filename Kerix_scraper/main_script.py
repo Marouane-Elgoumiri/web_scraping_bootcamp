@@ -38,7 +38,7 @@ if __name__ == "__main__":
         row_count = sum(1 for row in reader) - 1
     end_time = time.time()  
     duration = (end_time - start_time)/60  
-    Accuracy = (row_count/747)*100 
+    Accuracy = (row_count/506)*100 
     print(f"Scraped {row_count} companies in {duration:.2f} min")
     print(f"Accuracy of {Accuracy:.2f}%")
 
@@ -46,5 +46,4 @@ if __name__ == "__main__":
     db_name = os.getenv("DB_NAME")
     collection_name = os.getenv("COLLECTION_NAME")
 
-    
     process_and_upload(urls, output_csv, mongo_uri, db_name, collection_name)

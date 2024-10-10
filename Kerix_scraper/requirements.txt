@@ -2,6 +2,7 @@ bs4
 pymongo
 selenium
 selenium-stealth
+webdriver-manager
 tqdm
 twocaptcha
 python-dotenv
