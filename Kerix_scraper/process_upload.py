@@ -1,6 +1,6 @@
 import csv
 import logging
-from pymongo import MongoClient
+from pymongo import MongoClient, errors
 import hashlib
 import random
 import time

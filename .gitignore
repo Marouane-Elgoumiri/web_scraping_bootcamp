@@ -5,3 +5,4 @@ Remote_jobs.xls
 /Kerix_scraper/urls/scraping_urls.csv
 /Kerix_scraper/cache
 /Kerix_scraper/__pycache__
+chromedriver.log
