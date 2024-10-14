@@ -11,3 +11,4 @@
 </div>
 
 ## List of Machine learning algorithms
+-> K-means
